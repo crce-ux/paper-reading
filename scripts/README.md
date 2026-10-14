@@ -1,6 +1,6 @@
 # scripts/
 
-**这里是运行版。正本在 [`research-workflow`](https://github.com/crce-ux/research-workflow) 的 `scripts/`**——开发与测试都在那边。
+**这里是运行版。正本在 [`research-workflow`](https://github.com/crce-ux/research-workflow) 的 `scripts/`**——开发与测试都在总仓。
 
 改脚本请改总仓，再同步过来；**不要只改这里**。
 
@@ -20,13 +20,13 @@
 
 ## 边界
 
-**脚本只做能自动化的那一半。**
+**脚本只做可自动化的部分。**
 
 `check_note.py` 只查「**有没有标**」，**不查「标得对不对」**——
 这句到底算 `[Analysis]` 还是 `[Paper]`，是语义，人工过。
 
-它最值钱的是 **N3**：标了 `source-limited`（仅摘要）却引用 `Table 2` 或 `PDF p.3`——
-摘要里没有表格页码，**那是在编**。
+它最重要的是 **N3**：标了 `source-limited`（仅摘要）却引用 `Table 2` 或 `PDF p.3`——
+摘要里没有表格页码，**属于编造**。
 
 ## 自检
 
