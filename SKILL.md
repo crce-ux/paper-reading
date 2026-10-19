@@ -55,6 +55,27 @@ compatibility: 纯文本操作。读 .docx/.pdf 需 python-docx / pymupdf；文�
 
 ---
 
+## 开工前确认（先做这一步）
+
+读之前先问清四件事：读多深、为什么读、能拿到什么、要不要回填。用网页表单问完再读。
+
+```bash
+python scripts/confirm.py --spec references/confirm-spec.json \
+    --out <项目目录>/confirm_answers.json --intake <项目目录>/原料/
+```
+
+### 每项答案的下游动作
+
+**表内每一行都得真的改变后续动作。改变不了的，从表单里删掉。**
+
+| 答案 | 下游动作 |
+|---|---|
+| `depth` | 决定定位方式与可用的引用形式。扫读不得写页码，不得推断未见的方法与结果 |
+| `purpose` | 评估竞争文献时必写威胁评估；抄方法学模板时只看设计与统计 |
+| `grounding` | 只有摘要时按 source-limited 处理，引用写 `[Paper: Abstract]` |
+| `backfill` | 要回填时产出 15 列记录，前 11 列与证据表同名同序 |
+| `deliverable` | 决定停在判断、要点笔记还是完整笔记 |
+
 ## 〇、⭐ 证据标签五态（**本 skill 的核心**）
 
 **笔记里每一条断言，都要标出它是哪一类。** 标注每条断言的类别，就是把「原文说的」和「我推断的」

@@ -1,0 +1,68 @@
+{
+  "title": "文献精读 · 前置确认",
+  "intro": "以下事项决定读多深、引用写成什么形式、是否回填文献表。填写完成后提交，阅读据此展开。",
+  "questions": [
+    {
+      "id": "depth",
+      "type": "radio",
+      "label": "阅读深度",
+      "effect": "决定产出形态与可用的引用形式。扫读只能引用作者自述的结论；精读才能给精确范围与条件。",
+      "required": true,
+      "options": [
+        {"value": "扫读", "hint": "标题摘要图表结论，约 5 分钟"},
+        {"value": "泛读", "hint": "加方法结果，约 20 分钟"},
+        {"value": "精读", "hint": "全文逐段，产出完整笔记"}
+      ]
+    },
+    {
+      "id": "purpose",
+      "type": "radio",
+      "label": "阅读目的",
+      "effect": "决定重点章节。竞争文献必须写威胁评估；方法学模板只看设计与统计细节。",
+      "required": true,
+      "options": [
+        {"value": "判断值不值得读"},
+        {"value": "写精读笔记"},
+        {"value": "支撑某个论点"},
+        {"value": "评估竞争文献", "hint": "须写它做到什么、没做到什么、我们的差异"},
+        {"value": "抄方法学模板"}
+      ]
+    },
+    {
+      "id": "grounding",
+      "type": "radio",
+      "label": "能拿到什么",
+      "effect": "决定定位方式。只有摘要时不得写页码，也不得推断未见的方法与结果。",
+      "required": true,
+      "options": [
+        {"value": "全文 PDF，页码可靠"},
+        {"value": "全文，页码不可靠", "hint": "按章节与图表定位"},
+        {"value": "只有摘要"}
+      ]
+    },
+    {
+      "id": "backfill",
+      "type": "radio",
+      "label": "是否回填文献表",
+      "effect": "决定是否产出 15 列记录。回填时前 11 列与证据表同名同序，下游可直接搬。",
+      "required": true,
+      "options": [
+        {"value": "要回填"},
+        {"value": "不回填，只要笔记"}
+      ]
+    },
+    {
+      "id": "deliverable",
+      "type": "radio",
+      "label": "本次交付范围",
+      "effect": "决定停在哪一步。",
+      "required": true,
+      "options": [
+        {"value": "一句话判断"},
+        {"value": "要点笔记"},
+        {"value": "完整笔记"},
+        {"value": "完整笔记 + 文献表行"}
+      ]
+    }
+  ]
+}
